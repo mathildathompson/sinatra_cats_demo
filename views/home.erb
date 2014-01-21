@@ -1,0 +1,12 @@
+<%#=binding.pry%>
+
+<form action="cats/<%=@row['id']%>/edit" method="post">
+
+  <% @row.each do |row| %>
+  <p><%= @row['id'] %><%=@row['name'] %><%= @row['id']%><a href="/cats/<%=@row['id']%>/edit">edit</a>
+  <form action="/cats/<%=@row['id']/delete%>" method="post">
+    <button>Delete</button>
+  </form>
+  </p>
+  
+<%end%>

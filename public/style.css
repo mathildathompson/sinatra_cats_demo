@@ -1,0 +1,10 @@
+.nav{
+ /*   display:inline-block;*/
+    list-style: none;
+}
+
+.nav > li{
+    display:inline-block;
+}
+
+/*the arrow means that it will just get the lis within the first level of nesting*/
